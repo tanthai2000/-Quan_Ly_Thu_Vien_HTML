@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Đăng ký sách</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    </head>
+    <body>
+    <div class="container">
+        <img src="images/banner1.jpg" alt="logo" style="margin: 50px 250px; width:50%" >
+        <div class="container" >
+            <div class="row">
+                <div class="col-4" style="border: 1px solid black;   text-align: center;height: 500px;">
+                    <div class=" form-group">
+                        <input type="file" onchange="readimage(this)" accept = "image / *" name="image" 
+                        id="" placeholder="" aria-describedby="fileHelpId" >
+                        <img id="output" style="width: 100%" alt="your image" />
+                    </div>
+                </div>
+                <div class="col" style="margin-left: 50px; ">
+                    <div class="row" style="margin-bottom:35px; margin-left: 5px; border: 1px solid black;">
+                            <input class="form-control" type="text" placeholder="Tên sách" >
+                    </div>
+                    <div class="row" style="margin-bottom:35px;margin-left: 5px;  border: 1px solid black;">
+                        <input class="form-control" type="text" placeholder="Tên tác giả" >
+                    </div>
+                    <div class="row" style="margin-bottom:5px;" >
+                        <div class="col">
+                            <div class="input-group" >
+                                <div class="input-group-prepend" >
+                                <label class="input-group-text" for="inputGroupSelect01" style="margin-left:5px ; border: 1px solid black;">Options</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01" style="border: 1px solid black;">
+                                <option selected>Thể Loại</option>
+                                <option value="Tuvi-PhongThuy">Tử vi- Phong Thủy</option>
+                                <option value="VanHoc">Văn Học</option>
+                                <option value="TieuThuyet">Tiểu Thuyết</option>
+                                <option value="KinhTe">Kinh Tế</option>
+                                <option value="XaHoi">Xã Hội</option>
+                                <option value="ChinhTri">Chính trị</option>
+                                <option value="LichSu">Lịch Sử</option>
+                                <option value="KhoaHoc">Khoa Học</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="text" placeholder="Số lượng" style="border: 1px solid black;padding: 5px 75px;margin: 0px 15px;  text-align: center;">
+                        </div>  
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" style="height:45%;margin-top: 25px;margin-left:20px ; border:1px solid black">Ngày mượn</span>
+                            </div>
+                            <input type="date" id="birthday" name="birthday" style="margin: 25px 0px;padding: 5px 120px; width: 81%;border:1px solid black" >
+                        </div>
+                    </div>   
+                    <div class="row">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" style="padding:0px 23px;height:68%;margin-top: 10px;margin-left:20px ; border:1px solid black">Ngày trả</span>
+                            </div>
+                            <input type="date" id="birthday" name="birthday" style="margin: 10px 0px;padding: 5px 120px; width: 81%;border:1px solid black" >
+                        </div>
+                    </div> 
+                    <div class="row" style="margin:25px 0px;margin-left: 5px;  border: 1px solid black;">
+                        <input class="form-control" type="text" placeholder="Số tiền đặt cọc" >
+                    </div>     
+                    <div class="row" style="margin:25px 0px;margin-left: 5px;  border: 1px solid black;">
+                        <input class="form-control" type="text" placeholder="Nhân viên trực thư viện" >
+                    </div> 
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:25px; " >
+                <div class="col" >  
+                    
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Đồng Ý</button>
+                </div>  
+                <div class="col">
+                    
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Hủy</button>
+                </div>  
+            </div>
+            <div class="row" style="margin-top:50px; " >
+                <section id="Footer">
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <h3>DỊCH VỤ TỐT NHẤT</h3>
+                                        <p>Nhân viên nhiệt tình, chu đáo, chuyên nghiệp</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <h3>HỖ TRỢ KHÁCH HÀNG 24/7</h3>
+                                        <p>Hỗ trợ nhiệt tình, tận tâm tận tụy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <h3>CẬP NHẬP</h3>
+                                        <p>Cập nhập sách mới nhất, theo kịp xu hướng với thị trường</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5">
+                                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: 227 Nguyễn Văn Cừ, Phường 4, Quận 5,TP.Hồ Chí Minh </p>
+                                <p><i class="fas fa-mobile-alt"></i> Hotline: 0358965421 - 0342686566</p>
+                                <p><i class="far fa-envelope"></i> Email: tanthai172k@gmail.com</p>
+                            </div>
+                            <div class="col-7" style="padding-left:250px">
+                                <p>LIÊN HỆ NGƯỜI QUẢN LÝ ĐỂ NHẬN HỖ TRỢ</p>
+                                <form class="form-inline" action="" >
+                                    <div class="form-group">
+                                        <input type="email" class="form-control FormEmail" id=""  placeholder="Nhập email của bạn !!!">
+                                    </div>
+                                    <button type="submit" class="btn btn-danger SizeEmail">Đăng ký</button>
+                                </form>         
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="./js/phuoc.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
